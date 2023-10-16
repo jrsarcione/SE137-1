@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE137 HW W1</title>
+<style>
+    .hide{
+        display: none;
+    }
+    
+</style>
+</head>
+<body>
+    <div id="header">John Sarcione</div>
+    <div id="nav">
+        <a href="#">Bio</a>
+        <a href="#">Education</a>
+        <a href="#">Hobbies</a>
+
+    </div>
+    <div id="main">
+        <div id="bio">
+            <h2>My Bio</h2>
+            <img src="Photos/1500x500.jpg" alt="My friends and I">
+            <p>My name is John Sarcione and I am from Attleboro, Massachusetts. I work at Helix Esports at Patriot Place in the customer service department and as an analyst for the academy Call of Duty team. I chose NEIT because it is close to home and I felt that the course goes in depth with my major. As a Software Engineering  major, knowing multiple languages and aspects of programming helps prepare me for my future career. Hopefully I will use my degree at a stable tech firm as a software programmer, specifically in a city. Out of all the cities I would like to work at, Austin, Texas would be the ideal city as it is affordable and most high tech companies are moving there. </p>
+            <p>I enjoy playing video games, specifically Call of Duty and Valorant. I also enjoy hanging out with friends and going for long drives. I have traveled across the country for tournaments. Meeting friends along the way.             </p>
+
+        </div>
+        <div id="Education">Education</div>
+            <ul>
+                <li>Attleboro High School</li>
+                <li>Quinnipiac University</li>
+                <li>New England Institute of Technology</li>
+
+            </ul>
+        <div id="Hobbies">Hobbies</div>
+            <ol>
+                <li>Video Games</li>
+                <img src="Photos/MWIII-REVEAL-FULL-TOUT.jpg" alt="Video Games">
+                <li>Listening to Live Music</li>
+                <li>Watching Sports</li>
+            </ol>
+    </div>
+    <div id="footer">©2020 John Sarcione | W1 Assignment</div>
+
+    <script>
+        var a = Array.from(document.querySelectorAll(`a`));
+
+        for(let i=0; i<a.length; i++)
+        {
+            a[i].addEventListener(`click`, hide)
+
+        }
+        
+        function hide(e)
+        {
+            e.preventDefault();
+
+            var div = document.querySelectorAll(`#main div`)
+            for(let i=0; i<div.length; i++)
+            {
+                div[i].classList.add(`hide`);
+
+            }
+           
+            div[a.indexOf(e.target)].classList.remove(`hide`);
+        }
+    </script>
+    
+</body>
+</html>
