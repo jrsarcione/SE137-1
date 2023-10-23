@@ -1,13 +1,38 @@
-.h1
-{
-    color: blue;
-}
-.header
-{
-    color: lightblue;
+
+*{
+    background-color:darkgray;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.body
-{
-    background-color: grey;
+.header{
+    color:maroon;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    color:blue ;
+}
+
+a:hover{
+    color:lightblue;
+}
+a:visited{
+    color:darkblue;
+}
+div {
+    border: 1px solid #000000;
+}
+p{
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,0.6755077030812324) 0%, rgba(29,253,32,1) 50%, rgba(252,176,69,1) 100%);
+}
+#footer{
+    text-align: center;
+}
+img{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+    width: 500px;
 }
