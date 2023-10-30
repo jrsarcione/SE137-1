@@ -1,12 +1,28 @@
 @charset "utf-8";
-.wrapper
-{
-    display: grid;
-    grid-template-columns: 3;
-    gap: 10px;
-    grid-auto-rows: minmax(68px, auto);
-
+html, body{
+    box-sizing: border-box;
+    height:100%; 
+    margin:0px;
 }
+.wrapper{
+    display:grid;
+    grid-template-areas:"h h h "
+                        "h h h "
+                        "i i i"
+                        "j j j"
+                        "j j j"
+                        "j j j"
+                        "k k l"
+                        "m m m";
+    
+    box-sizing: border-box;
+    min-height:100%; 
+    /*Center a Box element*/
+    width: 1920px;
+    position:relative;
+    margin:0 auto 0 auto;
+}
+
 
 @font-face {
     font-family: Jolly Lodger;
@@ -22,36 +38,31 @@
 }
 *
 {
-    background-color: black;
+    background-color: white;
 }
-.name
+h1
 {
-    grid-column: auto;
-    grid-row: 1/2;
+    grid-area: h;
     background-color: #F4BF96;
     color: #CE5A67;
     text-align: center;
     font-size: 80px;
     font-family: Jolly Lodger;
-    
+    width: 1920px;;
 }
-.bio
+h2.
 {
-    grid-column: auto;
-    grid-row: 2;
+    grid-area: i;
     background-color: #F4BF96;
     color: #CE5A67;
     font-size: 48px;
     text-align: center;
     font-family: Jua;
 }
-.body
-{
-    background-color: #F4BF96;
-    grid-row: auto;
-}
+
 .bioBody
 {
+    grid-area: j;
     margin-left: 288px;
     margin-right: 288px;
     background-color: #FCF5ED;
@@ -67,15 +78,22 @@ p
 }
 .hobbies
 {
-    grid-column: 1;
-    grid-row: 3;
+    grid-area: k;
     margin-left: 134px;
+    width:460px
 }
 .schools
 {
-    grid-column: 3;
-    grid-row: 3;
+    grid-area: l;
+    margin-right: 134px;
+    width:460px
 
+}
+.footer
+{
+    grid-area: m;
+    color:#CE5A67;
+    text-align: center;
 }
 h3
 {
