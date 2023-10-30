@@ -8,7 +8,6 @@ html, body{
     display:grid;
     grid-template-areas:"h h h "
                         "h h h "
-                        "i i i"
                         "j j j"
                         "j j j"
                         "j j j"
@@ -48,45 +47,41 @@ h1
     text-align: center;
     font-size: 80px;
     font-family: Jolly Lodger;
-    width: 1920px;;
+    margin: 0;
+    margin-bottom: 10px;
 }
-h2.
+h2
 {
-    grid-area: i;
     background-color: #F4BF96;
     color: #CE5A67;
     font-size: 48px;
     text-align: center;
     font-family: Jua;
+    margin: 0;
 }
 
 .bioBody
 {
     grid-area: j;
-    margin-left: 288px;
-    margin-right: 288px;
     background-color: #FCF5ED;
-    text-align: center;
     color: black;
     font-family: Inter;
     font-size: 24px;
-
 }
 p
 {
     background-color: #FCF5ED;
+    padding-left:50px;
+    padding-right:50px;
+
 }
 .hobbies
 {
     grid-area: k;
-    margin-left: 134px;
-    width:460px
 }
 .schools
 {
     grid-area: l;
-    margin-right: 134px;
-    width:460px
 
 }
 .footer
@@ -99,4 +94,15 @@ h3
 {
     background-color:#1F1717BF ;
     color: #CE5A67;
+    font-size: 24px;
+    font-family: Inter;
+}
+h4
+{
+    background-color:#1F1717BF ;
+    color: #CE5A67;
+    opacity: 75%;
+    font-size: 24px;
+    font-family: Inter;
+
 }
