@@ -1,22 +1,84 @@
-@charset "UTF-8";
-
-*{border: 1px solid black;}
-html, body{
-    height:100vh;
-    border:0px solid black;
+@charset "utf-8";
+.wrapper
+{
+    display: grid;
+    grid-template-columns: 3;
+    gap: 10px;
+    grid-auto-rows: minmax(68px, auto);
 
 }
-body{
-    min-height: 100%;
-    background-color: #eee;
-    margin:0px;
-}
-main{
-    border-color:red;
-    border-width: 5px;
-    box-sizing: border-box;
-    min-height: 100vh;
-    display:grid;
-    grid-template-columns:100px auto 200px;}
 
+@font-face {
+    font-family: Jolly Lodger;
+    src: url(Fonts/JollyLodger-Regular.ttf);
+}
+@font-face {
+    font-family: Jua;
+    src: url(Fonts/Jua-Regular.ttf);
+}
+@font-face {
+    font-family: Inter;
+    src: url(Fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+*
+{
+    background-color: black;
+}
+.name
+{
+    grid-column: auto;
+    grid-row: 1/2;
+    background-color: #F4BF96;
+    color: #CE5A67;
+    text-align: center;
+    font-size: 80px;
+    font-family: Jolly Lodger;
     
+}
+.bio
+{
+    grid-column: auto;
+    grid-row: 2;
+    background-color: #F4BF96;
+    color: #CE5A67;
+    font-size: 48px;
+    text-align: center;
+    font-family: Jua;
+}
+.body
+{
+    background-color: #F4BF96;
+    grid-row: auto;
+}
+.bioBody
+{
+    margin-left: 288px;
+    margin-right: 288px;
+    background-color: #FCF5ED;
+    text-align: center;
+    color: black;
+    font-family: Inter;
+    font-size: 24px;
+
+}
+p
+{
+    background-color: #FCF5ED;
+}
+.hobbies
+{
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 134px;
+}
+.schools
+{
+    grid-column: 3;
+    grid-row: 3;
+
+}
+h3
+{
+    background-color:#1F1717BF ;
+    color: #CE5A67;
+}
