@@ -37,7 +37,7 @@ html, body{
 }
 *
 {
-    background-color: white;
+    background-color: black;
 }
 h1
 {
@@ -73,15 +73,20 @@ p
     background-color: #FCF5ED;
     padding-left:50px;
     padding-right:50px;
+    margin-bottom: 10px;
 
 }
 .hobbies
 {
     grid-area: k;
+    background-image: url(Photos/2018-CWL-Championship.webp);
 }
 .schools
 {
     grid-area: l;
+    font-size: 24px;
+    font-family: Inter;
+    margin:0px;
 
 }
 .footer
@@ -89,6 +94,8 @@ p
     grid-area: m;
     color:#CE5A67;
     text-align: center;
+    font-family: Inter;
+    font-size: 24px;
 }
 h3
 {
@@ -96,6 +103,8 @@ h3
     color: #CE5A67;
     font-size: 24px;
     font-family: Inter;
+    margin:0px;
+
 }
 h4
 {
@@ -104,5 +113,21 @@ h4
     opacity: 75%;
     font-size: 24px;
     font-family: Inter;
+    margin:0px;
+
+}
+ul, li{
+    background-color: #FCF5ED;
+    opacity: 75%;
+    font-family: Inter;
+    font-size: 24px;
+    margin:0px;
+
+}
+ol, li{
+    background-color: #FCF5ED;
+    font-family: Inter;
+    font-size: 24px;
+    margin:0px;
 
 }
