@@ -17,5 +17,6 @@ main{
     box-sizing: border-box;
     min-height: 100vh;
     display:grid;
-    align-content: center;
-}
+    grid-template-columns:100px auto 200px;}
+
+    
